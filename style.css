@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secondColor);
+    font-family: 'Rowdies', cursive;
+    user-select: none;
+}
+:root {
+    --mainBgColor: #E86E1A;
+    --secondColor: #0B0E16;
+    --borderLeftAndTopColor: #1b1f29;
+    --borderRightAndBottomColor: #000;
+    --borderWeight: 4px;
+    --hoveredBorderWeight: 2px;
+    --activeBorderWeight: 0px;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mainBgColor);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.time_container {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.time {
+    font-size: 100px;
+    text-shadow: -2px -2px 0px var(--borderLeftAndTopColor);
+}
+.buttons_container {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    background-color: var(--secondColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: var(--borderWeight) solid var(--borderLeftAndTopColor);
+    border-left: var(--borderWeight) solid var(--borderLeftAndTopColor);
+    border-bottom: var(--borderWeight) solid var(--borderRightAndBottomColor);
+    border-right: var(--borderWeight) solid var(--borderRightAndBottomColor);
+}
+.button:hover {
+    border-top: var(--hoveredBorderWeight) solid var(--borderLeftAndTopColor);
+    border-left: var(--hoveredBorderWeight) solid var(--borderLeftAndTopColor);
+    border-bottom: var(--hoveredBorderWeight) solid var(--borderRightAndBottomColor);
+    border-right: var(--hoveredBorderWeight) solid var(--borderRightAndBottomColor);
+}
+.button:active {
+    border-top: var(--activeBorderWeight) solid var(--borderLeftAndTopColor);
+    border-left: var(--activeBorderWeight) solid var(--borderLeftAndTopColor);
+    border-bottom: var(--activeBorderWeight) solid var(--borderRightAndBottomColor);
+    border-right: var(--activeBorderWeight) solid var(--borderRightAndBottomColor);
+}

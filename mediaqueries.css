@@ -1,0 +1,35 @@
+@media screen and (max-width: 400px) and (min-width: 0px){
+    .time {
+        font-size: 50px;
+    }
+    .buttons_container {
+        gap: 10px;
+    }
+    .button {
+        width: 80px;
+        height: 22px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 401px){
+    .time {
+        font-size: 60px;
+    }
+    .button {
+        width: 100px;
+        height: 26px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .time {
+        font-size: 80px;
+    }
+    .button {
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
